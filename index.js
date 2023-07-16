@@ -1,6 +1,7 @@
 // automatically creating table on startup and inserting data
 const sequelize = require("./model/dbconfig");
 const Note = require("./model/note");
+var cors = require("cors"); // for cross origin resource sharing so the frontend can call these endpoints
 
 // simply synchronize the model with the db // use this if the other is commented out
 // await sequelize.sync();
@@ -24,6 +25,8 @@ const express = require("express");
 const noteRoutes = require("./routes/noteRoutes");
 
 const app = express();
+app.use(cors()); // Enable CORS for all routes
+
 app.use(express.json());
 
 // application routes
