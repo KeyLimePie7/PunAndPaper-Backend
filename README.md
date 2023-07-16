@@ -23,8 +23,8 @@ http://localhost:3005/api/note
 
 ```
 {
-    "title": "{{$randomFullName}}",
-    "content": "{{$randomEmail}}",
+    "title": "{{$randomTitle}}",
+    "content": "{{$randomContent}}",
 }
 ```
 
@@ -33,8 +33,8 @@ http://localhost:3005/api/note/id
 
 ```
 {
-    "title": "{{$randomFullName}}",
-    "content": "{{$randomEmail}}",
+    "title": "{{$randomTitle}}",
+    "content": "{{$randomContent}}",
 }
 ```
 

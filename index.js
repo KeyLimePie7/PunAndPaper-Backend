@@ -11,8 +11,8 @@ sequelize.sync({ force: true }).then(async () => {
   console.log("db is ready");
   for (let i = 1; i < 5; i++) {
     const note = {
-      title: `profile${i}`,
-      content: `profile${i}@email.com`,
+      title: `title${i}`,
+      content: `content${i}`,
     };
     await Note.create(note);
   }
